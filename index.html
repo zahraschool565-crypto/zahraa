@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechFix SMK - Solusi Servis Laptop & HP Praktis</title>
+  
+  <!-- CSS Internal -->
+  <style>
+    /* Reset & Fondasi */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f4f7f6;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header & Navigasi */
+    header {
+      background-color: #1a365d;
+      color: #fff;
+      padding: 1rem 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #3182ce;
+    }
+
+    header h1 span {
+      color: #e2e8f0;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #1a365d 0%, #2b6cb0 100%);
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+
+    .hero h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto 2rem auto;
+      color: #e2e8f0;
+    }
+
+    .btn-primary {
+      background-color: #38a169;
+      color: white;
+      padding: 0.8rem 1.8rem;
+      border: none;
+      border-radius: 25px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: #2f855a;
+    }
+
+    /* Container Umum */
+    .container {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 1.8rem;
+      color: #2d3748;
+      margin-bottom: 2rem;
+    }
+
+    /* Kartu Layanan (Grid) */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      border-top: 4px solid #3182ce;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: #2b6cb0;
+    }
+
+    .card .price {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #2d3748;
+      margin: 0.5rem 0;
+    }
+
+    /* Section Form Kalkulator & Pemesanan */
+    .booking-section {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    .form-group {
+      margin-bottom: 1.2rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: #4a5568;
+    }
+
+    .form-group input, 
+    .form-group select, 
+    .form-group textarea {
+      width: 100%;
+      padding: 0.8rem;
+      border: 1px solid #cbd5e0;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    .total-box {
+      background-color: #ebf8ff;
+      border: 1px solid #bee3f8;
+      padding: 1rem;
+      border-radius: 6px;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #2c5282;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #2d3748;
+      color: #a0aec0;
+      font-size: 0.9rem;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigasi -->
+  <header>
+    <h1>TechFix<span>SMK</span></h1>
+    <a href="#order" class="btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Pesan</a>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Laptop Lemot atau Bermasalah?</h2>
+    <p>Jasa perbaikan & instalasi laptop/HP praktis khusus siswa & guru. Pengerjaan cepat, aman, dan bergaransi!</p>
+    <a href="#order" class="btn-primary">Hitung Estimasi & Pesan</a>
+  </section>
+
+  <!-- Section Layanan -->
+  <main class="container">
+    <h2 class="section-title">Layanan Populer</h2>
+    <div class="services-grid">
+      <div class="card">
+        <h3>Instalasi Software & OS</h3>
+        <p>Instal ulang Windows/Linux, Microsoft Office, Photoshop, dan software produktivitas.</p>
+        <p class="price">Rp 50.000</p>
+      </div>
+
+      <div class="card">
+        <h3>Pembersihan & Thermal Paste</h3>
+        <p>Bersihkan debu kipas laptop & ganti thermal paste agar laptop tidak panas / *overheat*.</p>
+        <p class="price">Rp 45.000</p>
+      </div>
+
+      <div class="card">
+        <h3>Pembersihan Virus & Malware</h3>
+        <p>Pembersihan virus total, perbaikan *file registry*, dan pemasangan antivirus ringan.</p>
+        <p class="price">Rp 35.000</p>
+      </div>
+    </div>
+
+    <!-- Section Form Pemesanan Interaktif -->
+    <div class="booking-section" id="order" style="margin-top: 3rem;">
+      <h2 class="section-title" style="margin-bottom: 1rem;">Formulir Pemesanan & Kalkulator</h2>
+      
+      <form id="serviceForm">
+        <div class="form-group">
+          <label for="nama">Nama Lengkap:</label>
+          <input type="text" id="nama" placeholder="Masukkan nama kamu" required>
+        </div>
+
+        <div class="form-group">
+          <label for="kelas">Kelas / Jurusan / Lokasi:</label>
+          <input type="text" id="kelas" placeholder="Contoh: XII TKJ 1 / Ruang Guru" required>
+        </div>
+
+        <div class="form-group">
+          <label for="layanan">Pilih Layanan Utama:</label>
+          <select id="layanan" onchange="hitungTotal()" required>
+            <option value="50000">Instalasi Software & OS - Rp 50.000</option>
+            <option value="45000">Pembersihan Kipas & Thermal Paste - Rp 45.000</option>
+            <option value="35000">Pembersihan Virus & Optimization - Rp 35.000</option>
+            <option value="75000">Paket Lengkap (Install + Bersih + Antivirus) - Rp 75.000</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="catatan">Detail Kendala / Permintaan Tambahan:</label>
+          <textarea id="catatan" rows="3" placeholder="Jelaskan masalah laptop/HP kamu..."></textarea>
+        </div>
+
+        <!-- Box Estimasi Biaya Otomatis -->
+        <div class="total-box">
+          Total Estimasi: <span id="totalHarga">Rp 50.000</span>
+        </div>
+
+        <button type="button" onclick="kirimKeWhatsApp()" class="btn-primary" style="width: 100%;">
+          📱 Kirim Pesanan via WhatsApp
+        </button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 TechFix SMK - Proyek Pelatihan TIK. Dibuat oleh Siswa SMK Kreatif & Inovatif.</p>
+  </footer>
+
+  <!-- JavaScript Internal -->
+  <script>
+    // 1. Fungsi untuk Menghitung Total Harga Otomatis
+    function hitungTotal() {
+      const layananSelect = document.getElementById('layanan');
+      const harga = parseInt(layananSelect.value);
+      
+      // Format angka ke format Rupiah
+      const hargaFormatted = new Intl.NumberFormat('id-ID', {
+        style: 'currency',
+        currency: 'IDR',
+        maximumFractionDigits: 0
+      }).format(harga);
+
+      document.getElementById('totalHarga').innerText = hargaFormatted;
+    }
+
+    // 2. Fungsi untuk Memformat dan Mengirim Pesan ke WhatsApp
+    function kirimKeWhatsApp() {
+      const nama = document.getElementById('nama').value.trim();
+      const kelas = document.getElementById('kelas').value.trim();
+      const layananSelect = document.getElementById('layanan');
+      const namaLayanan = layananSelect.options[layananSelect.selectedIndex].text;
+      const catatan = document.getElementById('catatan').value.trim();
+
+      // Validasi Input Sederhana
+      if (!nama || !kelas) {
+        alert('Mohon isi Nama dan Kelas/Lokasi kamu terlebih dahulu!');
+        return;
+      }
+
+      // Masukkan Nomor WhatsApp Pemilik Usaha/Toko di sini (Ganti kode 628xxx)
+      const nomorToko = "6281234567890"; 
+
+      // Menyusun teks pesan WhatsApp
+      let pesan = `Halo TechFix SMK, saya ingin memesan layanan servis:\n\n`;
+      pesan += `👤 *Nama:* ${nama}\n`;
+      pesan += `🏫 *Lokasi/Kelas:* ${kelas}\n`;
+      pesan += `🛠️ *Layanan:* ${namaLayanan}\n`;
+      if (catatan) {
+        pesan += `📝 *Catatan Kendala:* ${catatan}\n`;
+      }
+      pesan += `\nMohon konfirmasi ketersediaan jadwal. Terima kasih!`;
+
+      // Mengubah format pesan agar sesuai URL Encoding
+      const urlWA = `https://wa.me/${nomorToko}?text=${encodeURIComponent(pesan)}`;
+
+      // Buka tautan WhatsApp di tab baru
+      window.open(urlWA, '_blank');
+    }
+  </script>
+</body>
+</html>
